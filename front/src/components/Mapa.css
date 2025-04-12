@@ -1,0 +1,188 @@
+/* Mapa.css */
+.map-container {
+    position: relative;
+    width: fit-content; /* Ajusta el contenedor al tamaño de la imagen */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.map-img {
+    width: 80%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+}
+
+.map-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(249, 252, 105, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; /* Ajusta el tamaño del texto */
+}
+
+.map-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Tamaños específicos para cada botón */
+.button-1 {
+    width: 210px;
+    height: 332px;
+    font-size: 20px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+}
+
+.button-2 {
+    width: 290.1px;
+    height: 187px;
+    background-color: rgba(248, 236, 129, 0.5);
+    font-size: 30px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+}
+
+
+.button-3 {
+    width: 196px;
+    height: 109px;
+    background-color: rgba(252, 142, 142, 0.5);
+    font-size: 30px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    clip-path: polygon(51% 14%, 76% 18%, 100% 29%, 100% 72%, 100% 100%, 0 100%, 0 53%, 0 30%, 16% 21%, 30% 17%);
+
+
+}
+.button-4 {
+    width: 57px;
+    height: 102px;
+    background-color: rgba(170, 185, 250, 0.5);
+    font-size: 14px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    
+}
+.button-5 {
+    width: 46px;
+    height: 85px;
+    background-color: rgba(191, 243, 157, 0.5);
+    font-size: 14px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    
+}
+
+
+.button-6 {
+    width: 30.5px;
+    height: 59px;
+    background-color: rgba(255, 192, 192, 0.5);
+    font-size: 14px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    writing-mode: vertical-lr; /* Texto vertical de izquierda a derecha */
+    text-orientation: mixed; /* Orientación mixta para las letras */
+    white-space: nowrap; /* Evita el ajuste automático de línea */
+    line-height: 1; /* Ajusta la altura de línea para texto vertical */
+    position: absolute;
+    top: 19.1%;
+    left: 42%;
+    letter-spacing: 3px; /* Ajusta el espaciado entre letras */
+}
+
+.button-6 span {
+    display: inline-block;
+    transform: rotate(180deg); /* Rota cada letra 180 grados */
+}
+
+.button-7    {
+    width: 37px;
+    height: 78px;
+    background-color: rgba(132, 209, 245, 0.5);
+    font-size: 12px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    
+}
+
+.button-8    {
+    width: 180px;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0.616);
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    
+}
+
+
+
+.custom-button {
+    position: absolute;
+    width: 392px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(218, 216, 99, 0.5); /* Fondo semi-transparente */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Montserrat', sans-serif;
+    clip-path: polygon(50% 0%, 67% 5%, 78% 10%, 88% 19%, 100% 33%, 46% 100%, 0 25.5%, 9% 15%, 17% 8%, 32% 2%);
+
+}
+
+.custom-button:hover {
+    background-color: rgba(0, 123, 255, 0.7); /* Fondo semi-transparente al pasar el cursor */
+/* Estilos para el menú desplegable */
+}
+.modal {
+    position: fixed; /* Modal posición fija para cubrir la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Z-index alto para estar sobre otros elementos */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.modal-header {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0; /* Borde redondeado solo arriba */
+}
+
+.modal-body {
+    padding: 10px 0;
+}
+
+.modal-line {
+    border-top: 1px solid #ccc; /* Línea de tabla gris */
+    margin: 10px 0;
+}

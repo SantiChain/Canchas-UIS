@@ -1,0 +1,53 @@
+/* Perfil.css */
+
+.perfil-container {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 4rem auto;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 255, 179, 0.3);
+    text-align: center;
+  }
+  
+  .perfil-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00ffb3;
+  }
+  
+  .perfil-container p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .perfil-container button {
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .perfil-container button:first-of-type {
+    background-color: #00ffb3;
+    color: #000000;
+    margin-right: 1rem;
+  }
+  
+  .perfil-container button:first-of-type:hover {
+    background-color: #00cc91;
+  }
+  
+  .perfil-container button:last-of-type {
+    background-color: #ff3c3c;
+    color: #ffffff;
+  }
+  
+  .perfil-container button:last-of-type:hover {
+    background-color: #d63031;
+  }
+  

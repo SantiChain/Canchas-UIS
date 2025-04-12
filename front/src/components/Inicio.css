@@ -1,0 +1,60 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Nordic', sans-serif;
+    color: #1f2937;
+  }
+  
+  .inicio-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .botones-inicio {
+    display: flex;
+    flex-direction: column; /* uno debajo del otro */
+    gap: 20px; /* espacio entre botones */
+    width: 200px;
+  }
+  
+  .botones-inicio button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botones-inicio button:hover {
+    background-color: #0056b3;
+  }
+  
+  .inicio-description {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .inicio-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .inicio-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
