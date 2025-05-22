@@ -26,11 +26,14 @@ function Login() {
         console.log("🔍 data:", data);
 
         if (response.ok) {
-            localStorage.setItem('token', data.token || '');
-            localStorage.setItem('codigoEstudiante', data.codigo); // Si estás usando token
-            navigate('/v1/mapa');
+           localStorage.setItem('codigoEstudiante', data.codigo);
+           if (data.codigo === "2200") {
+             navigate('/admin'); // Redirige al panel de administrador
+            } else {
+              navigate('/v1/mapa'); // Redirige al usuario normal
+            }
         } else {
-            setError(data.message || 'Inicio de sesión fallido');
+             setError(data.message || 'Inicio de sesión fallido');
         }
     } catch (err) {
         console.error('🔴 Error de conexión:', err);

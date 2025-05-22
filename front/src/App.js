@@ -12,6 +12,7 @@ import Register from './components/Register';
 import Perfil from './components/Perfil';
 import Edit from './components/Edit';
 import EliminarReserva from './components/EliminarReserva';
+import AdminPanel from './components/AdminPanel';
 
 
 function AppContent() {
@@ -32,6 +33,7 @@ function AppContent() {
                 <Route path="/perfil" element={<Perfil />} />
                 <Route path="/editar" element={<Edit />} />
                 <Route path="/v1/eliminar" element={<EliminarReserva />} />
+                <Route path="/admin" element={<AdminPanel />} />
 
             </Routes>
         </div>
