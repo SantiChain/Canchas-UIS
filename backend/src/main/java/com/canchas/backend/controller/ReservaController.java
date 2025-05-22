@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import org.bson.types.ObjectId;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/reservations")
+@CrossOrigin(origins = "*")
 public class ReservaController {
 
     @Autowired
@@ -68,6 +70,23 @@ public void cancelarReserva(@RequestBody Map<String, String> body) {
     }
 
     reservaRepository.deleteAll(reservas);
+}
+
+@GetMapping("/all")
+public List<Reserva> obtenerTodasLasReservas() {
+    return reservaRepository.findAll();
+}
+
+@DeleteMapping("/{id}")
+public void eliminarReservaPorId(@PathVariable String id) {
+    if (!ObjectId.isValid(id)) {
+        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "ID de reserva inválido");
+    }
+    
+    reservaRepository.findById(id)
+        .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Reserva no encontrada"));
+    
+    reservaRepository.deleteById(id);
 }
 
 }
